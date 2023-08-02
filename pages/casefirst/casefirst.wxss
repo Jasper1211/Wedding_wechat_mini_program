@@ -1,0 +1,72 @@
+.case{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50rpx;
+}
+
+.theme{
+  display: flex;
+  flex-direction: column;
+}
+
+.theme-style{
+  display: flex;
+  flex-direction: row;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  align-items: center;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.theme-color-image{
+  margin-left: 5rpx;
+  width: 30rpx;
+  height: 30rpx;
+  margin-bottom: 50rpx;
+}
+
+.theme-text{
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 20rpx ;
+  margin-right: 5rpx;
+  margin-bottom: 50rpx;
+}
+
+.case-info{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  border-bottom: #d1d1d1 1px solid;
+}
+
+.case-info-detail{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.case-info-text{
+  margin-left: 20rpx;
+  font-size: 20rpx;
+  color: #b3b3b3;
+}
+
+.case-image{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30rpx;
+}
+
+.case-image-part{
+  display: flex;
+  flex-direction: column;
+}
+
+.case-image-detail{
+  width: 100%;
+}

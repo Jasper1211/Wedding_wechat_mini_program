@@ -1,0 +1,17 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/casefirst/casefirst",
+    "pages/casesecond/casesecond",
+    "pages/case/case"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#fff"
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "l-icon": "/miniprogram_npm/lin-ui/icon/index",
+    "l-avatar": "/miniprogram_npm/lin-ui/avatar/index"
+  },
+  "lazyCodeLoading": "requiredComponents"
+}

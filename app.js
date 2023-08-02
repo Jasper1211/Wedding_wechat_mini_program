@@ -1,0 +1,9 @@
+App({
+  //小程序一启动，就执行
+  onLaunch(){
+    console.log('欢迎来到自然主义')
+    wx.cloud.init({
+      env:'jasper-4gy669re44e23694'//云开发环境id
+    })
+  }
+})

@@ -1,0 +1,37 @@
+<view class="case">
+<!--主题区域-->
+    <text style="margin-left: 20rpx; font-size: 40rpx; font-weight: 500;">{{caseData.name1}}</text>
+    <view class="theme-style">
+      <text class="theme-text"> {{caseData.color1}} </text>
+      <image class="theme-color-image" src="/images/icon/star.png"></image>
+      <image class="theme-color-image" src="/images/icon/view.png"></image>
+      <image class="theme-color-image" src="/images/icon/view.png"></image>
+    </view>
+
+  <!--婚礼信息区域-->
+  <view class="case-info">
+    <view class="case-info-detail">
+      <l-icon class="post-like-image" size="20" color="#b3b3b3" name="time" />
+      <text class="case-info-text">{{caseData.date1}}</text>
+    </view>
+    <view class="case-info-detail">
+      <l-icon class="post-like-image" size="20" color="#b3b3b3" name="address" />
+      <text class="case-info-text">{{caseData.address1}}</text>
+    </view>
+    <view class="case-info-detail"  style="margin-bottom: 30rpx;">
+      <l-icon class="post-like-image" size="20" color="#b3b3b3" name="user" />
+      <text class="case-info-text">杭州自然主义婚礼</text>
+    </view>
+  </view>
+
+<!---婚礼图片区域-->
+  <view class="case-image">
+    <text style="margin-left: 20rpx; font-size: 30rpx; font-weight: 500; margin-bottom: 30rpx;">预览</text>
+    <view class="case-image-part">
+      <image class="case-image-detail" src="{{caseData.image11}}"></image>
+      <image class="case-image-detail" src="{{caseData.image12}}"></image>
+      <image class="case-image-detail" src="{{caseData.image13}}"></image>
+      <image class="case-image-detail" src="{{caseData.image14}}"></image>
+    </view>
+  </view>
+</view>

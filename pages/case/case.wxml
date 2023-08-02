@@ -1,0 +1,58 @@
+<view class="total-case">
+<!--主题导航栏-->
+  <view class="home-navbar">
+    <swiper display-multiple-items="5" bindchange="swiperChange">
+      <swiper-item>
+        <text style="width: 100%; text-align: center;">全部标签</text>
+      </swiper-item>
+      <swiper-item>
+        <text style="width: 100%; text-align: center;">白绿森系</text>
+      </swiper-item>
+      <swiper-item>
+        <text style="width: 100%; text-align: center;">主题创意</text>
+      </swiper-item>
+      <swiper-item>
+        <text style="width: 100%; text-align: center;">纯白圣洁</text>
+      </swiper-item>
+      <swiper-item>
+        <text style="width: 100%; text-align: center;">双人婚礼</text>
+      </swiper-item>
+      <swiper-item>
+        <text style="width: 100%; text-align: center;">美式简约</text>
+      </swiper-item>
+      <swiper-item>
+        <text style="width: 100%; text-align: center;">目的地婚礼</text>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <block wx:for="{{list}}" wx:key="_id">
+    <view style="display: flex; justify-content: space-between; margin-bottom: 50rpx;">
+      <view data-id="{{item._id}}" bind:tap="onGoToDetail1" style="flex: 1;">
+        <view style="margin: 10px;">
+          <view  style="position: relative;">
+            <image src="{{item.image11}}" style="width: 100%;"></image>
+            <view style="position: absolute; bottom: 1;">
+              <text style="color: #ededed; font-size: 23rpx;">{{item.name1}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view data-id="{{item.caseID}}" bind:tap="onGoToDetail2" style="flex: 1;">
+        <view style="margin: 10px;">
+          <view style="position: relative;">
+            <image src="{{item.image21}}" style="width: 100%;"></image>
+            <view style="position: absolute; bottom: 1;">
+              <text style="color: #ededed; font-size: 23rpx;">{{item.name2}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>  
+
+
+
+
+
+</view>

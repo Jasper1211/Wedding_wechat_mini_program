@@ -1,0 +1,109 @@
+<view style="border-bottom: 40px solid #000000;">
+<!--轮播图-->
+  <swiper interval="3000" indicator-dots indicator-active-color="#fff" autoplay circular easing-function="linear">
+    <swiper-item>
+      <image src="https://6a61-jasper-4gy669re44e23694-1317289257.tcb.qcloud.la/%E5%AE%89%E5%90%89%E4%B8%A4%E4%BA%BA%E7%A7%81%E5%A5%94%E5%A9%9A%E7%A4%BC/1.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://6a61-jasper-4gy669re44e23694-1317289257.tcb.qcloud.la/%E5%AE%89%E5%90%89%E4%B8%A4%E4%BA%BA%E7%A7%81%E5%A5%94%E5%A9%9A%E7%A4%BC/4.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://6a61-jasper-4gy669re44e23694-1317289257.tcb.qcloud.la/%E4%B8%AD%E5%8D%AB%E7%9B%AE%E7%9A%84%E5%9C%B0%E6%A9%99%E8%89%B2%E7%B3%BB%E5%A9%9A%E7%A4%BC/2.jpg"></image>
+    </swiper-item>
+  </swiper>
+  <!--公司介绍部分-->
+  <view class="home-total">
+  <!--内容-->
+   <view class="home-introduction">
+    <text class="home-introduction-title">杭州自然主义婚礼</text>
+    <text class="home-introduction-content">“探索四季的自然美学婚礼”</text>
+    <text class="home-introduction-content">自然主义婚礼拥有6年婚礼经验</text>
+    <text class="home-introduction-content">专注小众/自然/精致婚礼</text>
+    <text class="home-introduction-content">以新人故事为起点，设计专属定制婚礼</text>
+    <text class="home-introduction-content">注重品质，精雕细节</text>
+    <text class="home-introduction-content">为新人提供婚礼设计/策划统筹服务</text>
+    <text class="home-introduction-content">协助新人轻松备婚</text>
+   </view>
+
+  <!--工具栏-->
+  <view class="home-tools">
+    <view bindtap="phoneOn">
+      <image class="home-tools-single" src="cloud://jasper-4gy669re44e23694.6a61-jasper-4gy669re44e23694-1317289257/icon/电话.png"></image>
+    </view>
+    <view bindtap="copyText" data-text = '{{contents}}'>
+      <image class="home-tools-single" src="cloud://jasper-4gy669re44e23694.6a61-jasper-4gy669re44e23694-1317289257/icon/微信.png"></image>
+    </view>
+    <view bindtap="getLoc"> 
+      <image class="home-tools-single" src="cloud://jasper-4gy669re44e23694.6a61-jasper-4gy669re44e23694-1317289257/icon/定位.png"></image>
+    </view>
+    <image class="home-tools-single" src="cloud://jasper-4gy669re44e23694.6a61-jasper-4gy669re44e23694-1317289257/icon/分享.png"></image>
+  </view>
+  </view>
+
+  <!--主题导航栏-->
+  <view>
+  <view class="home-theme">
+    <text style="margin-right: 15rpx; color: #ededed; font-weight: bold; font-size: 40rpx; ">作品</text>
+    <l-icon class="post-like-image" size="30" color="#fff" name="more" />
+  </view>
+
+  <view class="home-navbar">
+    <swiper display-multiple-items="5" bindchange="swiperChange">
+      <swiper-item>
+        <text style="width: 100%; text-align: center; color: ghostwhite">全部标签</text>
+      </swiper-item>
+      <swiper-item>
+        <text style="width: 100%; text-align: center; color: ghostwhite">白绿森系</text>
+      </swiper-item>
+      <swiper-item>
+        <text style="width: 100%; text-align: center; color: ghostwhite">主题创意</text>
+      </swiper-item>
+      <swiper-item>
+        <text style="width: 100%; text-align: center; color: ghostwhite">纯白圣洁</text>
+      </swiper-item>
+      <swiper-item>
+        <text style="width: 100%; text-align: center; color: ghostwhite">双人婚礼</text>
+      </swiper-item>
+      <swiper-item>
+        <text style="width: 100%; text-align: center; color: ghostwhite">美式简约</text>
+      </swiper-item>
+      <swiper-item>
+        <text style="width: 100%; text-align: center; color: ghostwhite">目的地婚礼</text>
+      </swiper-item>
+    </swiper>
+  </view>
+  </view>
+
+  <!--主题案例部分-->
+  <block wx:for="{{list}}" wx:key="_id">
+    <view style="display: flex; justify-content: space-between; margin-bottom: 50rpx;">
+      <view data-id="{{item._id}}" bind:tap="onGoToDetail1" style="flex: 1;">
+        <view style="margin: 10px;">
+          <view  style="position: relative;">
+            <image src="{{item.image11}}" style="width: 100%;"></image>
+            <view style="position: absolute; bottom: 1;">
+              <text style="color: #ededed; font-size: 23rpx;">{{item.name1}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view data-id="{{item._id}}" bind:tap="onGoToDetail2" style="flex: 1;">
+        <view style="margin: 10px;">
+          <view style="position: relative;">
+            <image src="{{item.image21}}" style="width: 100%;"></image>
+            <view style="position: absolute; bottom: 1;">
+              <text style="color: #ededed; font-size: 23rpx;">{{item.name2}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>  
+
+  <!--按钮栏-->
+  <view bind:tap="onTap" class="button">
+    更多作品
+  </view>
+  
+
+</view>

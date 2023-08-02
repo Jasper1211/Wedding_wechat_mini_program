@@ -1,0 +1,88 @@
+page{
+  background-color:#222222;
+}
+
+swiper{
+  width: 100%;
+  height: 500rpx;
+}
+
+swiper image{
+  width: 100%;
+  height: 500rpx;
+  object-fit: cover；
+}
+
+.home-total{
+  border-bottom: 10px solid #000000;
+}
+
+.home-introduction{
+  display: flex;
+  flex-direction: column;
+  margin-top: 40rpx;
+  align-items: center;
+
+}
+
+.home-introduction-title{
+  color: #ededed;
+  font-weight: bold;
+  font-size:40rpx;
+  margin-bottom: 20rpx;
+}
+
+.home-introduction-content{
+  color: rgb(60, 60, 60);
+  align-items: center;
+  font-size: 25rpx;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+  letter-spacing: 1rpx;
+  border-spacing: 2rpx;
+  line-height: 50rpx;
+}
+
+.home-tools{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 50rpx;
+  margin-bottom: 100rpx;
+  justify-content: space-between;
+  margin-left: 150rpx;
+  margin-right: 150rpx;
+}
+
+.home-tools-single{
+  height: 40rpx;
+  width: 40rpx;
+}
+
+.home-theme{
+  display: flex;
+  flex-direction: row;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.home-navbar{
+  margin-left: 20rpx;
+  color:rgb(60, 60, 60);
+  font-size: 25rpx;
+  font-weight:400;
+  height: 70rpx;
+}
+
+.button{
+  background-color: rgb(60, 60, 60);
+  color: #fff;
+  text-align: center;
+  margin: 0 40rpx;
+  line-height: 60rpx;
+  margin-bottom: 20rpx;
+  font-size: 20rpx;
+  border-radius: 20rpx;
+}
